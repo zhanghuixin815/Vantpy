@@ -1,7 +1,7 @@
 brwserType:
-  browserName : Firefox
   browserName : Chrome
-  #browserName : IE
+# browserName : Firefox
+# browserName : IE
 
 ptahUrl:
   URL : https://www.baidu.com

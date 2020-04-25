@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 """
 读取配置。这里配置文件用的yaml，也可用其他如XML,INI等，需在file_reader中添加相应的Reader进行处理。
@@ -29,7 +28,6 @@ class Config:
         self.config = YamlReader(config).data
         self.elements = YamlReader(element).data
         self.case_data = YamlReader(case_data).data
-        self.interface_data = YamlReader(interface_data).data
         self.exe_ptah = EXE_PATH
         self.driver_pt = chrome
         self.screen_shot = screenshot

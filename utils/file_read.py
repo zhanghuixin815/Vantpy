@@ -1,10 +1,10 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 """
 文件读取。YamlReader读取yaml文件，ExcelReader读取excel。
 """
-import yaml
 import os
+
+import yaml
 from xlrd import open_workbook
 
 

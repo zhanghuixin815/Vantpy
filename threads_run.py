@@ -1,12 +1,9 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from selenium import webdriver
-
+import threading
 # 测试用例
 from time import sleep, ctime
-import threading
 
-from tomorrow import threads
+from selenium import webdriver
 
 
 def test_baidu(browser, search):

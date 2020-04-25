@@ -1,12 +1,10 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import os
 import sys
-import time
 import unittest
-import sys
+
 sys.path.append('../')
-from HTMLTestRunner3 import HTMLTestRunner
+from utils.HTMLTestRunner3 import HTMLTestRunner
 from tomorrow import threads
 
 #获取测试用例的路径

@@ -1,11 +1,11 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-# @Author  : Vant
-# @Email   : 944921374@qq.com
+# -*- coding:utf-8 -*-m
+
+import sys
 
 from selenium.webdriver.common.by import By
+
 from test.common.Selenium2 import BasePage
-import sys
+
 sys.path.append('../')
 class BaiduPage(BasePage):
     """
