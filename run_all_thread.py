@@ -13,7 +13,7 @@ curpath = os.path.dirname(os.path.realpath(__file__))
 casepath = os.path.join(curpath,'test','case')
 reportpath = os.path.join(curpath,'report')
 
-def add_case(case_path = casepath,rule= "test_*.py"):
+def add_case(case_path = casepath,rule= "demo_*.py"):
     '''加载所有测试用例'''
     discover = unittest.defaultTestLoader.discover(case_path,
                                                    pattern=rule,
@@ -34,6 +34,6 @@ def run_case(all_case,report_path = reportpath,nth = 0):
 if __name__ == '__main__':
     #用例集合
     cases = add_case()
-     #之前是批量执行，这里改成for循环执行
+    #之前是批量执行，这里改成for循环执行
     for i , j in zip(cases,range(len(list(cases)))):
         run_case(i,nth = j)
