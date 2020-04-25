@@ -3,5 +3,5 @@ brwserType:
 # browserName : Firefox
 # browserName : IE
 
-ptahUrl:
+pathUrl:
   URL : https://www.baidu.com

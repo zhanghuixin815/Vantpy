@@ -19,7 +19,7 @@ class BrowserDriver(object):
     def openbrowser(self,driver):
         browser = self.c.get("brwserType").get("browserName")
         logger.info("选择的浏览器为: %s 浏览器" % browser)
-        url = self.c.get('ptahUrl').get('URL')
+        url = self.c.get('pathUrl').get('URL')
         logger.info("打开的URL为: %s" % url)
         chrome_options = Options()
         chrome_options.add_argument('--no-sandbox')  # 解决DevToolsActivePort文件不存在的报错

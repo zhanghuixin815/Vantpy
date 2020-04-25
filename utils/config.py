@@ -12,7 +12,7 @@ DATA_PATH = os.path.join(BASE_PATH, 'data')
 DRIVER_PATH = os.path.join(BASE_PATH, 'drivers','chromedriver.exe')
 LOG_PATH = os.path.join(BASE_PATH, 'logs')
 REPORT_PATH = os.path.join(BASE_PATH, 'report')
-SCREENSHOTS_PATH = os.path.join(BASE_PATH,"screenshots",'')
+SCREENSHOTS_PATH = os.path.join(BASE_PATH,"report",'screenshot','')
 
 ELEMENT_PATH = os.path.join(BASE_PATH,'test','page','elements.yaml')
 CASE_PATH = os.path.join(BASE_PATH,'test','case','case.yaml')
@@ -65,7 +65,7 @@ class Config:
 
 if __name__ == '__main__':
     c = Config()
-    print(c.get("ptahUrl").get('URL'))
+    print(c.get("pathUrl").get('URL'))
     print(c.get_ele('URL').get('url'))
     print(c.exe_data())
     # print(c.screen_shot_path())
